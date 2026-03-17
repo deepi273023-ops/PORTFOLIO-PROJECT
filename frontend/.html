@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepika S - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+
+        nav ul li a:hover {
+            color: #667eea;
+            text-shadow: 1px 1px 2px rgba(102,126,234,0.7);
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(102,126,234,0.3);
+        }
+
+        .about, .education, .skills, .projects, .contact {
+            margin-bottom: 2rem;
+        }
+
+        .about img {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #667eea;
+            box-shadow: 0 0 10px rgba(102,126,234,0.5);
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            background: #667eea;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .projects .project {
+            margin-bottom: 1rem;
+        }
+
+        .projects .project h3 {
+            color: #333;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .contact input, .contact textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact button {
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .contact button:hover {
+            background: #5a67d8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .skills ul {
+                flex-direction: column;
+            }
+
+            .contact form {
+                width: 100%;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deepika S</h1>
+        <p>1st Year BCA Cloud Computing Student at Kristu Jayanti Deemed to be University</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Deepika S, a passionate 1st-year BCA student specializing in Cloud Computing at Kristu Jayanti Deemed to be University. I'm eager to learn and explore the world of technology, with a keen interest in cloud services, data management, and innovative solutions.</p>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Applications (BCA) in Cloud Computing</strong><br>
+        Kristu Jayanti Deemed to be University<br>
+        Year: 1st Year<br>
+        Expected Graduation: 2028</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Basic Cloud Concepts (AWS/Azure)</li>
+            <li>Python</li>
+            <li>Database Management</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Simple Calculator App</h3>
+            <p>A basic calculator application developed with JavaScript for performing arithmetic operations.</p>
+        </div>
+        <div class="project">
+            <h3>Cloud-Based File Storage Demo</h3>
+            <p>An introductory project demonstrating basic cloud storage concepts using mock APIs.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Deepika S. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for interactivity
+        // Toggle navigation menu on mobile (if needed, but kept simple)
+        // Smooth scrolling is handled by CSS
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Thank you, ${name}! Your message has been sent. I'll get back to you at ${email} soon.`);
+            // Reset form
+            this.reset();
+        });
+
+        // Dynamic year update in footer
+        document.querySelector('footer p').innerHTML = '&copy; ' + new Date().getFullYear() + ' Deepika S. All rights reserved.';
+    </script>
+</body>
+</html>
