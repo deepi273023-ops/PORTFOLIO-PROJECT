@@ -28,6 +28,16 @@ app.post("/contact", async (req, res) => {
   }
 });
 
+app.get("/messages", async (req, res) => {
+  try {
+    const result = await db.query("SELECT * FROM contacts");
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Database error");
+  }
+});
+
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
